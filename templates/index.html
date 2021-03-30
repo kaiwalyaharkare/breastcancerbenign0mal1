@@ -1,0 +1,150 @@
+{% extends 'base.html' %}
+{% block body %}
+
+</div>
+
+
+<!-- 'mean radius', 'mean texture', 'mean perimeter', 'mean area',
+       'mean smoothness', 'mean compactness', 'mean concavity',
+       'mean concave points', 'mean symmetry', 'mean fractal dimension',
+       'radius error', 'texture error', 'perimeter error', 'area error',
+       'smoothness error', 'compactness error', 'concavity error',
+       'concave points error', 'symmetry error', 'fractal dimension error',
+       'worst radius', 'worst texture', 'worst perimeter', 'worst area',
+       'worst smoothness', 'worst compactness', 'worst concavity',
+       'worst concave points', 'worst symmetry', 'worst fractal dimension' -->
+
+<form  method="post" class="Breast Cancer p-md-3">
+    {% csrf_token %}
+  <div class="form-row">
+    <div class="form-group col-md-4">
+      <label for="inputEmail4">mean radius</label>
+      <input type="text" class="form-control" id="meanradius" id="meanradius"  >
+    </div>
+    <div class="form-group col-md-4">
+      <label for="inputtext4">mean texture</label>
+      <input type="text" class="form-control" name="meantexture" id="meantexture" >
+    </div>
+    <div class="form-group col-md-4">
+        <label for="inputtext4">mean perimeter</label>
+        <input type="text" class="form-control" name="meanperimeter" id="meanperimeter" >
+      </div> 
+      button 
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-4">
+        <label for="inputtext4"> mean area</label>
+        <input type="text" class="form-control" name="meanarea" id="meanarea" >
+      </div>  
+      <div class="form-group col-md-4">
+        <label for="inputtext4">mean smoothness</label>
+        <input type="text" class="form-control" id="meansmoothness" name="meansmoothness" >
+      </div>  
+      <div class="form-group col-md-4">
+        <label for="inputtext4">radius error', </label>
+        <input type="text" class="form-control" name="radiuserror" id="radiuserror" >
+      </div>
+    </div> 
+  
+     <div class="form-row">
+        <div class="form-group col-md-4">
+            <label for="inputtext4">  texture error</label>
+            <input type="text" class="form-control" name ="textureerror" id="textureerror" >
+          </div>  
+          <div class="form-group col-md-4">
+            <label for="inputtext4"> texture error </label>
+            <input type="text" class="form-control" name ="textureerror" id="textureerror">
+          </div>  
+          <div class="form-group col-md-4">
+            <label for="inputtext4"> perimeter error</label>
+            <input type="text" class="form-control" name ="perimetererror" id="perimetererror" >
+          </div>
+        </div>        
+    
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label for=" area error"> area error</label>
+                    <input type="text" class="form-control" name =" areaerror" id=" areaerror" >
+                  </div>  
+                  <div class="form-group col-md-4">
+                    <label for="worst radius">worst radius</label>
+                    <input type="text" class="form-control" name ="worstradius" id="worstradius"  >
+                  </div>  
+                  <div class="form-group col-md-4">
+                    <label for="inputtext4">mean compactness</label>
+                    <input type="text" class="form-control" name ="meancompactness" id="meancompactness" >
+                  </div>
+                </div>        
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label for="smoothness error"> smoothness error</label>
+                        <input type="text" class="form-control" name ="smoothnesserror" id="smoothnesserror"  >
+                      </div>  
+                      <div class="form-group col-md-4">
+                        <label for="compactness error">'compactness error</label>
+                        <input type="text" class="form-control" name ="compactnesserror" id="compactnesserror" >
+                      </div>  
+                      <div class="form-group col-md-4">
+                        <label for="">concavity error</label>
+                        <input type="text" class="form-control" name ="concavityerror" id="concavityerror">
+                      </div>
+                    </div>        
+                    <div class="form-row">
+                        <div class="form-group col-md-4">
+                            <label for="concave points error">concave points error</label>
+                            <input type="text" class="form-control" name ="concavepointserror"id="concavepointserror" >
+                          </div>  
+                          <div class="form-group col-md-4">
+                            <label for="symmetry error">symmetry error</label>
+                            <input type="text" class="form-control" name ="symmetryerror" id="symmetryerror" >
+                          </div>  
+                          <div class="form-group col-md-4">
+                            <label for="inputtext4">fractal dimension error</label>
+                            <input type="text" class="form-control" name ="fractaldimensionerror" id="fractaldimensionerror" >
+                          </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-4">
+                                <label for="inputtext4">worst texture</label>
+                                <input type="text" class="form-control" name ="worsttexture" id="worsttexture" >
+                              </div>  
+                              <div class="form-group col-md-4">
+                                <label for="inputtext4">worst perimeter</label>
+                                <input type="text" class="form-control" id="worstperimeter" name ="worstperimeter">
+                              </div>  
+                              <div class="form-group col-md-4">
+                                <label for="inputtext4"> worst area</label>
+                                <input type="text" class="form-control" name ="worstarea" id="worstarea" >
+                              </div>
+                            </div>        
+                                         
+                            <div class="form-row">
+                                <div class="form-group col-md-4">
+                                    <label for="inputtext4">worst smoothness</label>
+                                    <input type="text" class="form-control" name ="worst smoothness" id="worst smoothness" >
+                                  </div>  
+                                  <div class="form-group col-md-4">
+                                    <label for="inputtext4">' 'worst compactness'</label>
+                                    <input type="text" class="form-control" name ="worstsmoothness" id="worstsmoothness" >
+                                  </div>  
+                                  <div class="form-group col-md-4">
+                                    <label for="inputtext4"> worst concave points</label>
+                                    <input type="text" class="form-control" name =" worstconcavepoints" id=" worstconcavepoints"  >
+                                  </div>
+                                </div>        
+                                             
+                                <div class="form-row">
+                                    <div class="form-group col-md-4">
+                                        <label for="inputtext4"> worst symmetry</label>
+                                        <input type="text" class="form-control" name ="worstsymmetry"id="worstsymmetry" >
+                                      </div>  
+                                      <div class="form-group col-md-4">
+                                        <label for="inputtext4">worst fractal dimension</label>
+                                        <input type="text" class="form-control" name ="worstfractaldimension" id="worstfractaldimension" >
+                                      </div>  
+                                      
+                                    </div>        
+                                                 
+<button type="submit" class="btn btn-primary">Get Report</button>
+</form>
+{% endblock body %}
