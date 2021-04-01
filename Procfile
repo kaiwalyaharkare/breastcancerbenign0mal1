@@ -1,1 +1,1 @@
-web: python website/manage.py runserver 0.0.0.0:$PORT
+web: python breastcancerbenign0mal12/manage.py runserver 0.0.0.0:$PORT
