@@ -1,5 +1,5 @@
-tensorflow==2.4.1
-Django==3.1.7
-numpy==1.17.4
-pandas==0.25.3
-scikit_learn==0.24.1
+tensorflow
+Django
+numpy
+pandas
+scikit_learn
