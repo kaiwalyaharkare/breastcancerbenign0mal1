@@ -27,7 +27,7 @@ SECRET_KEY = '+ml70t$m)kf$xu4p2qt%qecvdw0uiur)xhpq)(8a2(exzb(jn3'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['http://127.0.0.1:8000/','https://breastcancerbenign0mal1.herokuapp.com/','127.0.0.1','https://breastcancerbenign0mal12.herokuapp.com/']
+ALLOWED_HOSTS = ['http://127.0.0.1:8000/','https://breastcancerbenign0mal1.herokuapp.com/','127.0.0.1','https://breastcancerbenign0mal12.herokuapp.com/','http://kaiwalyaharkare.pythonanywhere.com/']
 
 
 # Application definition

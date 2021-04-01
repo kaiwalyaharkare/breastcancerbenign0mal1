@@ -2,3 +2,4 @@ numpy
 Django
 pandas
 scikit_learn
+tensorflow
