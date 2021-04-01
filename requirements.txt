@@ -1,5 +1,5 @@
-tensorflow==1.12.0
-Django
 numpy
+Django
 pandas
 scikit_learn
+tensorflow==1.12.0
