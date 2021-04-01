@@ -15,7 +15,7 @@ from sklearn.preprocessing import MinMaxScaler
 from sklearn.model_selection import train_test_split 
 import pandas as pd 
 scaler = MinMaxScaler()
-modeldata = pd.read_csv('my-application\static\cancer_classification.csv')
+modeldata = pd.read_csv('cancer_classification.csv')
 X = modeldata.drop('benign_0__mal_1',axis=1)
 scaler.fit(X)
   
@@ -66,7 +66,7 @@ def index(request):
         
         scaler.transform(data)
         
-        model = load_model('my-application\static\breastcancerprediction.h5')
+        model = load_model('breastcancerprediction.h5')
         
         if model.predict_classes(data) == 1:
             cancerval = 'malignant '
